@@ -147,40 +147,38 @@ If that port is busy, it may switch to `5174`.
 
 ---
 ## Screenshots
-## Screenshots
 
-### Repository overview
-Quick view of the repo + README header.
+### 1) Repo overview
+Repo landing page / README.
 ![Repo overview](docs/screenshots/01-repo-overview.png)
 
-### Architecture overview
-High-level architecture / components and flow.
-![Architecture overview](docs/screenshots/08-architecture-overview.png)
-
-### Backend running (terminal)
-Uvicorn/FastAPI running on port 8000.
+### 2) Backend running (terminal)
+FastAPI/Uvicorn running on port 8000.
 ![Backend running](docs/screenshots/02-backend-running.png)
 
-### Swagger API docs
+### 3) Frontend running (terminal)
+Vite dev server running (shows local URL).
+![Frontend running](docs/screenshots/03-frontend-running.png)
+
+### 4) Swagger API docs
 Swagger UI loaded successfully.
 ![Swagger docs](docs/screenshots/04-swagger-docs.png)
 
-### Swagger – score executed
-“Try it out” executed with a 200 response + JSON.
+### 5) Swagger – score executed
+“Try it out” executed with 200 response + JSON.
 ![Swagger score executed](docs/screenshots/05-swagger-score-executed.png)
 
-### Frontend running (terminal)
-Vite dev server running (shows Local URL).
-![Frontend running](docs/screenshots/03-frontend-running.png)
-
-### Frontend UI – form input
+### 6) Frontend UI – form input
 UI ready before scoring (inputs filled).
 ![Frontend UI input](docs/screenshots/06-frontend-ui-input.png)
 
-### Frontend UI – result
+### 7) Frontend UI – result
 UI after scoring (risk score, drivers, action + raw JSON).
 ![Frontend UI result](docs/screenshots/07-frontend-ui-result.png)
----
+
+### 8) Architecture overview
+High-level architecture / components and flow.
+![Architecture overview](docs/screenshots/08-architecture-overview.png)
 
 ## Notes
 
