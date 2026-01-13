@@ -146,43 +146,40 @@ If that port is busy, it may switch to `5174`.
    * Raw JSON response
 
 ---
-
+## Screenshots
 ## Screenshots
 
-> Save images in `docs/screenshots/` using the filenames below.
-
 ### Repository overview
-
+Quick view of the repo + README header.
 ![Repo overview](docs/screenshots/01-repo-overview.png)
 
-### Backend running (terminal)
+### Architecture overview
+High-level architecture / components and flow.
+![Architecture overview](docs/screenshots/08-architecture-overview.png)
 
+### Backend running (terminal)
+Uvicorn/FastAPI running on port 8000.
 ![Backend running](docs/screenshots/02-backend-running.png)
 
 ### Swagger API docs
+Swagger UI loaded successfully.
+![Swagger docs](docs/screenshots/04-swagger-docs.png)
 
-![Swagger docs](docs/screenshots/03-swagger-docs.png)
-
-### Swagger – Try it out
-
-![Swagger try it out](docs/screenshots/04-swagger-try-it-out.png)
+### Swagger – score executed
+“Try it out” executed with a 200 response + JSON.
+![Swagger score executed](docs/screenshots/05-swagger-score-executed.png)
 
 ### Frontend running (terminal)
+Vite dev server running (shows Local URL).
+![Frontend running](docs/screenshots/03-frontend-running.png)
 
-![Frontend running](docs/screenshots/05-frontend-running.png)
+### Frontend UI – form input
+UI ready before scoring (inputs filled).
+![Frontend UI input](docs/screenshots/06-frontend-ui-input.png)
 
-### Frontend UI – before scoring
-
-![UI blank](docs/screenshots/06-ui-blank.png)
-
-### Frontend UI – successful result
-
-![UI results](docs/screenshots/07-ui-results.png)
-
-### Raw JSON output
-
-![Raw JSON](docs/screenshots/08-raw-json.png)
-
+### Frontend UI – result
+UI after scoring (risk score, drivers, action + raw JSON).
+![Frontend UI result](docs/screenshots/07-frontend-ui-result.png)
 ---
 
 ## Notes
