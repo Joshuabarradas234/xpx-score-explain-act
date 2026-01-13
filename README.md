@@ -181,7 +181,6 @@ High-level architecture / components and flow.
 ![Architecture overview](docs/screenshots/08-architecture-overview.png)
 
 ## Notes
-
 * This project is for **demonstration and portfolio purposes only**
 * Do not use real personal or financial data
 * Scoring logic is illustrative, not production-grade
