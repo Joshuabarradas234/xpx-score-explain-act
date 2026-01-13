@@ -1,39 +1,53 @@
-```markdown
-# XPX Score → Explain → Act
+# XPX Score → Explain → Act  
+### Explainable Risk Decisioning Demo (Fintech-style)
 
-A full-stack demo that simulates a **salary advance risk scoring** workflow: submit an application, receive a **risk score**, get an **explanation of top drivers**, and a recommended **action** (Approve / Review / Decline).
+![Status](https://img.shields.io/badge/status-demo-blue)
+![Backend](https://img.shields.io/badge/backend-FastAPI-green)
+![Frontend](https://img.shields.io/badge/frontend-Vite-blue)
+![Explainability](https://img.shields.io/badge/AI-Explainable-orange)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-Built with **FastAPI** (backend) and **Vite** (frontend).
+> **One-liner:** Submit an application → receive a **risk score** → see **why** it happened → get a **recommended action**.
 
-> **LinkedIn-ready demo:** clear UI, explainability, and an API you can test via Swagger.
+---
 
+## Executive Summary
 
+**XPX Score → Explain → Act** is a full-stack demo that simulates a real-world **risk decisioning workflow** used in fintech, lending, and HR screening systems.
 
-## Quick Demo Links (Local)
-- **Frontend:** http://localhost:5173 (or 5174 if 5173 is busy)
-- **Backend Swagger:** http://127.0.0.1:8000/docs
-- **OpenAPI JSON:** http://127.0.0.1:8000/openapi.json
+The system demonstrates how automated decisions can be made **transparent, auditable, and policy-driven**, rather than being opaque “black boxes”.
 
+**Core outcome:**  
+- A numeric risk score  
+- Clear top drivers explaining the score  
+- A policy-aligned action: **Approve / Review / Decline**
 
+---
 
-## What This Project Shows
+## Decision Flow Overview
 
-This repo demonstrates a real-world decisioning pattern commonly used in fintech and credit systems:
+**Score → Explain → Act**
 
-1. **Score** – compute a risk score  
-2. **Explain** – return the top drivers behind the decision  
-3. **Act** – recommend an action and risk band (Green / Amber / Red)
+1. **Score** – Calculate a risk score from applicant inputs  
+2. **Explain** – Return top contributing factors  
+3. **Act** – Recommend an action based on policy thresholds  
 
+This mirrors real production systems used for:
+- Credit decisions  
+- Salary advances  
+- Fraud screening  
+- Automated HR screening  
 
+---
 
 ## Key Features
 - End-to-end flow: **request → score → explanation → action**
-- Explainability via **top drivers**
-- Policy reference included in responses
-- API-first design with Swagger & OpenAPI
-- Simple UI with raw JSON output for transparency
+- Built-in **explainability** (top decision drivers)
+- **Policy citation** returned alongside results
+- API-first design with **Swagger/OpenAPI**
+- Simple UI with **raw JSON output** for transparency
 
-
+---
 
 ## Tech Stack
 
@@ -41,14 +55,14 @@ This repo demonstrates a real-world decisioning pattern commonly used in fintech
 - Python
 - FastAPI
 - Uvicorn
-- Pydantic
+- Pydantic (request/response validation)
 
 ### Frontend
 - Vite
-- JavaScript
-- Fetch API
+- JavaScript UI
+- Fetch-based API integration
 
-
+---
 
 ## Repository Structure
 
@@ -59,23 +73,87 @@ This repo demonstrates a real-world decisioning pattern commonly used in fintech
 │   ├── app/
 │   │   └── main.py
 │   ├── requirements.txt
-│   └── tests/
+│   └── tests/                # if present
 ├── frontend/
 │   ├── package.json
-│   └── vite.config.js
+│   └── ... (Vite project files)
 ├── docs/
-│   └── screenshots/
+│   └── screenshots/          # screenshots used in this README
 └── README.md
 
 ````
 
+---
+
+## Getting Started
+
+### Prerequisites
+- Python 3.10+
+- Node.js 18+
+- npm
+
+---
+
+## Run Backend (FastAPI)
+
+From the repo root:
+
+```bash
+cd backend
+python3 -m pip install -r requirements.txt
+python3 -m uvicorn app.main:app --reload --port 8000
+````
+
+Open Swagger UI:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+---
+
+## Run Frontend (Vite)
+
+Open a **new terminal tab/window**, then:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Vite will print a local URL such as:
+
+```
+http://localhost:5173
+```
+
+If that port is busy, it may switch to `5174`.
+
+---
+
+## How to Use
+
+1. Start the **backend** on port `8000`
+2. Start the **frontend** on port `5173` or `5174`
+3. Open the frontend URL in your browser
+4. Enter sample values and click **Get score**
+5. Review:
+
+   * Risk score, band, and recommended action
+   * Top decision drivers
+   * Policy citation
+   * Raw JSON response
+
+---
+
 ## Screenshots
 
-Save images in `docs/screenshots/` using the filenames below.
+> Save images in `docs/screenshots/` using the filenames below.
 
 ### Repository overview
 
-![Repository overview](docs/screenshots/01-repo-overview.png)
+![Repo overview](docs/screenshots/01-repo-overview.png)
 
 ### Backend running (terminal)
 
@@ -93,30 +171,28 @@ Save images in `docs/screenshots/` using the filenames below.
 
 ![Frontend running](docs/screenshots/05-frontend-running.png)
 
-### Frontend UI – form input
+### Frontend UI – before scoring
 
-![Frontend UI](docs/screenshots/06-frontend-ui.png)
+![UI blank](docs/screenshots/06-ui-blank.png)
 
-### Result panel with explanation
+### Frontend UI – successful result
 
-![Result explanation](docs/screenshots/07-result-explanation.png)
+![UI results](docs/screenshots/07-ui-results.png)
 
 ### Raw JSON output
 
 ![Raw JSON](docs/screenshots/08-raw-json.png)
 
-
+---
 
 ## Notes
 
 * This project is for **demonstration and portfolio purposes only**
-* Do **not** use real personal or financial data
+* Do not use real personal or financial data
 * Scoring logic is illustrative, not production-grade
 
-
+---
 
 ## License
 
-MIT License
-
-```
+MIT License 
