@@ -126,7 +126,7 @@ http://localhost:5173
 
 If that port is busy, it may switch to `5174`.
 
-Important note (only clickable for someone who is running the project on their own computer)
+Important note (thes links below are only clickable for someone who is running the project on their own computer)
 
 Open Frontend UI: [http://localhost:5173](http://localhost:5173) (or [http://localhost:5174](http://localhost:5174) if 5173 is busy)
 
