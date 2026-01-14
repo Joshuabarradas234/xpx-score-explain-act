@@ -13,6 +13,7 @@
 
 - Run locally (Swagger + UI) — instructions below.
 - Screenshot walkthrough included at the bottom of this README.
+- Screenshot walkthrough included in the [Screenshots](#screenshots) section below.
 
 ---
 
