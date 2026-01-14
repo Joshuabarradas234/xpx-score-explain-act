@@ -28,6 +28,15 @@ The system demonstrates how automated decisions can be made **transparent, audit
 - Clear top drivers explaining the score  
 - A policy-aligned action: **Approve / Review / Decline**
 
+
+## Problem This Solves
+
+Salary advance / credit-style decisions are often opaque, inconsistent, and hard to audit. This demo shows a transparent decisioning flow that:
+
+- Produces a risk score and clear drivers (why the score happened)
+- Ties outcomes to policy thresholds (auditability)
+- Recommends an action (Approve / Review / Decline) to support consistent decisions
+
 ---
 
 ## Decision Flow Overview
