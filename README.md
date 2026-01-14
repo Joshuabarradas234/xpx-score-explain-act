@@ -9,6 +9,11 @@
 
 > **One-liner:** Submit an application → receive a **risk score** → see **why** it happened → get a **recommended action**.
 
+## Demo
+
+- Run locally (Swagger + UI) — instructions below.
+- Screenshot walkthrough included at the bottom of this README.
+
 ---
 
 ## Executive Summary
