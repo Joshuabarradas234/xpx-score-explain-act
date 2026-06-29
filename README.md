@@ -191,6 +191,9 @@ UI ready before scoring (inputs filled).
 UI after scoring (risk score, drivers, action + raw JSON).
 ![Frontend UI result](docs/screenshots/07-frontend-ui-result.png)
 
+### About this architecture
+The diagram below is an Azure-native reference architecture I designed for an explainable risk-decisioning system — it represents the production design, not a deployed environment. The working demo in this repo is the local FastAPI + Vite application (see screenshots), which implements the core Score → Explain → Act decisioning logic. The architecture shows how that logic would be deployed and scaled on Azure; the running code proves the decisioning flow itself.
+
 ### 8) Architecture overview
 High-level architecture / components and flow.
 ![Architecture overview](docs/screenshots/08-architecture-overview.png)
